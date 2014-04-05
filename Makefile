@@ -18,5 +18,6 @@ $(BDIR)/$(PGM):$(OBJS)
 $(ODIR)/%.o:$(SDIR)/%.c
 	@if [ ! -d $(ODIR) ];then mkdir $(ODIR); fi
 	$(CC) $(CFLAGS) -c $< -o $@
+
 clean:
 	rm -rf $(OBJS) $(PGM) $(BDIR)/$(PGM)
